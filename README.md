@@ -1,4 +1,4 @@
 cli-unit
 =============
 
-Provides an useful utilities to eaiser test command line applications.
+Provides an useful utilities to easier test command line applications.
