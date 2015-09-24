@@ -3,7 +3,7 @@
   "description": "A Framework for simplifying making tests for command line interfaced (CLI) programs.",
   "author": "Bogdan Nechyporenko",
   "repository": "git@github.com:acierto/cli-unit.git",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "main.js",
   "dependencies": {
     "karma": "0.12.31",
