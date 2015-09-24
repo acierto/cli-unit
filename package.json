@@ -3,7 +3,7 @@
   "description": "A Framework for simplifying making tests for command line interfaced (CLI) programs.",
   "author": "Bogdan Nechyporenko",
   "repository": "git@github.com:acierto/gulp-release.git",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "main.js",
   "dependencies": {
     "karma": "0.12.31",
