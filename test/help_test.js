@@ -1,7 +1,10 @@
 var cu = require('../lib/commands');
 
-//var _ = require('lodash-node/compat');
-
+/*
+* Before running tests you need to install xl-repo-linker:
+* 1. Install nodejs and npm
+* 2. npm install -g xl-repo-linker
+* */
 describe('Simple tests', function () {
     var $this = this;
 
@@ -11,19 +14,19 @@ describe('Simple tests', function () {
 
         return cu.checkCommand('xl-repo-linker -h', function (data) {
             cu.expect(data).contains('Usage: xl-repo-linker');
-        }, done);
+        }, done, 2000);
     });
 
     it('xl-repo-linker --show-size', function (done) {
         cu.checkCommand('xl-repo-linker --show-size', function (data) {
             cu.expect(data).contains('XLD snapshot size is:');
-        }, done);
+        }, done, 4000);
     });
 
     it('xl-repo-linker --mode bla', function (done) {
         cu.checkCommand('xl-repo-linker --mode bla', function (data) {
             cu.expect(data).contains('Please check your mode value, valid values are [local, jira, google-drive]\n');
-        }, done);
+        }, done, 3000);
     });
 
     it('xl-repo-linker --xld-home=IncorrectPath', function (done) {

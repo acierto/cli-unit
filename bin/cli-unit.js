@@ -1,10 +1,3 @@
 #!/usr/bin/env node
 
-var run = function() {
-
-    console.log('Running');
-
-
-};
-
-run();
+module.exports.commands = require('../lib/commands');
